@@ -53,4 +53,24 @@ Console.WriteLine($"a = {a}, b = {b}");
 (a, b) = (b, a);
 Console.WriteLine($"a = {a}, b = {b}");
 
+// Задание 5
+static void showDataTriangle()
+{
+    Console.WriteLine("Введите длину 1 катета");
+    int firstLag = int.Parse(Console.ReadLine());
 
+    Console.WriteLine("Введите длину 2 катета");
+    int secondLag = int.Parse(Console.ReadLine());
+    
+    int square = firstLag * secondLag / 2;
+
+    double hypotenuse = Math.Round(Math.Sqrt(Math.Pow(firstLag, 2) + Math.Pow(secondLag, 2)), 2);
+
+    double perimeter = firstLag + secondLag + hypotenuse;
+
+    Console.WriteLine($"Площадь {square},периметр {perimeter}");
+    Console.ReadKey();
+}
+
+Console.WriteLine("Задание 5");
+showDataTriangle();
