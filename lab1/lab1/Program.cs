@@ -72,5 +72,69 @@ static void showDataTriangle()
     Console.ReadKey();
 }
 
-Console.WriteLine("Задание 5");
-showDataTriangle();
+//Console.WriteLine("Задание 5");
+//showDataTriangle();
+
+static double getMultipliedNumbers(int numberValue)
+{
+    string stringValue = Convert.ToString(numberValue);
+    double result = char.GetNumericValue(stringValue[0]);
+
+    for (int i = 1; i < stringValue.Length; i++)
+    {
+        result *= char.GetNumericValue(stringValue[i]);
+    }
+    return result;
+}
+
+Console.WriteLine("Задание 6");
+Console.WriteLine(getMultipliedNumbers(1234));
+
+//задание 7
+static int getReversedNumber(int numberValue)
+{
+    string stringValue = Convert.ToString(numberValue);
+    string result = stringValue[stringValue.Length - 1].ToString();
+
+    for (int i = stringValue.Length - 2; i >= 0; i--)
+    {
+        result += stringValue[i];
+    }
+    Console.WriteLine(result);
+    return int.Parse(result);
+}
+Console.WriteLine("Задание 7");
+int reversed = getReversedNumber(362);
+
+
+//задание 4 лаб 2
+//static void Main()
+//{
+//    // Ввод данных
+//    Console.Write("Введите значение x (в радианах): ");
+//    double x = Convert.ToDouble(Console.ReadLine());
+
+//    Console.Write("Введите точность q: ");
+//    double q = Convert.ToDouble(Console.ReadLine());
+
+//    // Инициализация переменных
+//    double term = 1; // Первое слагаемое ряда Тейлора
+//    double cosX = term; // Значение косинуса
+//    int n = 0; // Счетчик слагаемых
+//    int sign = -1; // Знак (-1)^n
+
+//    // Вычисление ряда
+//    do
+//    {
+//        n++;
+//        term *= (x * x) / ((2 * n - 1) * (2 * n)); // Очередное слагаемое
+//        cosX += sign * term; // Добавление слагаемого к результату
+//        sign *= -1; // Переключение знака
+//    } while (Math.Abs(term) >= q);
+
+//    // Вывод результата
+//    Console.WriteLine($"Приближенное значение cos({x}): {cosX}");
+//    Console.WriteLine($"Количество учтенных слагаемых: {n + 1}");
+//}
+
+Console.ReadKey();
