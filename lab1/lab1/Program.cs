@@ -72,8 +72,8 @@ static void showDataTriangle()
     Console.ReadKey();
 }
 
-//Console.WriteLine("Задание 5");
-//showDataTriangle();
+Console.WriteLine("Задание 5");
+showDataTriangle();
 
 static double getMultipliedNumbers(int numberValue)
 {
@@ -106,35 +106,43 @@ static int getReversedNumber(int numberValue)
 Console.WriteLine("Задание 7");
 int reversed = getReversedNumber(362);
 
+//задание 8
+static int getMathResult() 
+{
+    Console.WriteLine("Введите x");
+    int xValue = int.Parse(Console.ReadLine());
 
-//задание 4 лаб 2
-//static void Main()
-//{
-//    // Ввод данных
-//    Console.Write("Введите значение x (в радианах): ");
-//    double x = Convert.ToDouble(Console.ReadLine());
+    int result = xValue * (xValue * (xValue * (3 * xValue - 5) + 2) - xValue) + 7;
+    return result;
+}
+Console.WriteLine("Задание 8");
+Console.WriteLine(getMathResult());
 
-//    Console.Write("Введите точность q: ");
-//    double q = Convert.ToDouble(Console.ReadLine());
+//задание 9
+static int getSystemDeterminant()
+{
+    Console.WriteLine("Введите a b c через пробел для 1го уравнения");
+    string[] firstStringNums = Console.ReadLine().Split(' ');
+    int a1 = int.Parse(firstStringNums[0]);
+    int b1 = int.Parse(firstStringNums[1]);
+    int c1 = int.Parse(firstStringNums[2]);
 
-//    // Инициализация переменных
-//    double term = 1; // Первое слагаемое ряда Тейлора
-//    double cosX = term; // Значение косинуса
-//    int n = 0; // Счетчик слагаемых
-//    int sign = -1; // Знак (-1)^n
+    Console.WriteLine("Введите a b c через пробел для 2го уравнения");
+    string[] secondStringNums = Console.ReadLine().Split(' ');
+    int a2 = int.Parse(secondStringNums[0]);
+    int b2 = int.Parse(secondStringNums[1]);
+    int c2 = int.Parse(secondStringNums[2]);
 
-//    // Вычисление ряда
-//    do
-//    {
-//        n++;
-//        term *= (x * x) / ((2 * n - 1) * (2 * n)); // Очередное слагаемое
-//        cosX += sign * term; // Добавление слагаемого к результату
-//        sign *= -1; // Переключение знака
-//    } while (Math.Abs(term) >= q);
+    Console.WriteLine("Введите a b c через пробел для 3го уравнения");
+    string[] thirdStringNums = Console.ReadLine().Split(' ');
+    int a3 = int.Parse(thirdStringNums[0]);
+    int b3 = int.Parse(thirdStringNums[1]);
+    int c3 = int.Parse(thirdStringNums[2]);
 
-//    // Вывод результата
-//    Console.WriteLine($"Приближенное значение cos({x}): {cosX}");
-//    Console.WriteLine($"Количество учтенных слагаемых: {n + 1}");
-//}
+    //математическим способом получаем определитель системы методом Крамера
+    return a1*(b2*c3-b3*c2)-b1*(a2*c3-a3*c2)+c1*(a2*b3-a3*b2);
+}
+Console.WriteLine("Задание 9");
+Console.WriteLine(getSystemDeterminant());
 
 Console.ReadKey();
