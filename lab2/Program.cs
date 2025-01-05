@@ -47,7 +47,27 @@ static void getSolutionQuadraticEquation()
 }
 //getSolutionQuadraticEquation();
 
+//Задание 2
+static void getPi()
+{
+    Console.Write("Введите количество слагаемых: ");
+    int n = Convert.ToInt32(Console.ReadLine()); // Счетчик слагаемых
+    double sign = -1;       // Знак для чередования (+ и -)
+    double denominator = 3; // Знаменатель дроби
+    double result = 1;
 
+    do
+    {
+        result += sign * 1 / denominator;
+        n--;
+        sign = -sign;                       
+        denominator += 2;
+    } while (n > 0);
+
+    // Вывод результата
+    Console.WriteLine($"Приближенное значение pi: {result*4}");
+}
+//getPi();
 
 //задание 4 
 static void getTeilorRow()
