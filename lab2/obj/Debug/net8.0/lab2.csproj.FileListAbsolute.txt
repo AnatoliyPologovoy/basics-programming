@@ -13,3 +13,18 @@ C:\Users\apple\Desktop\учеба\programing\basics-programming\lab2\obj\Debug\n
 C:\Users\apple\Desktop\учеба\programing\basics-programming\lab2\obj\Debug\net8.0\lab2.pdb
 C:\Users\apple\Desktop\учеба\programing\basics-programming\lab2\obj\Debug\net8.0\lab2.genruntimeconfig.cache
 C:\Users\apple\Desktop\учеба\programing\basics-programming\lab2\obj\Debug\net8.0\ref\lab2.dll
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\lab2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\lab2.AssemblyInfoInputs.cache
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\lab2.AssemblyInfo.cs
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\lab2.csproj.CoreCompileInputs.cache
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\lab2.sourcelink.json
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\lab2.dll
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\refint\lab2.dll
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\lab2.pdb
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\bin\Debug\net8.0\lab2.exe
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\bin\Debug\net8.0\lab2.deps.json
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\bin\Debug\net8.0\lab2.runtimeconfig.json
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\bin\Debug\net8.0\lab2.dll
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\bin\Debug\net8.0\lab2.pdb
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\lab2.genruntimeconfig.cache
+C:\Users\Anatoliy.DESKTOP-DO7OAA3\Documents\учеба Толик\основы программироваия\basics-programming\lab2\obj\Debug\net8.0\ref\lab2.dll

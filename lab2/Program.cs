@@ -69,6 +69,24 @@ static void getPi()
 }
 //getPi();
 
+//Задание 3
+static int getCountFourDigitFibonacciNum()
+{
+    int prePrevious = 1, previous = 1, current = 2, count = 0;
+    do
+    {
+        if (current >= 1000)
+        {
+            count++;
+        }
+        prePrevious = previous;
+        previous = current;
+        current += prePrevious;
+    } while (current <= 9999);
+    return count; //4
+}
+//Console.WriteLine(getCountFourDigitFibonacciNum()); 
+
 //задание 4 
 static void getTeilorRow()
 {
@@ -96,4 +114,38 @@ static void getTeilorRow()
     Console.WriteLine($"Приближенное значение cos({x}): {cosX}");
     Console.WriteLine($"Количество учтенных слагаемых: {n + 1}");
 }
+
+//Задание 5
+static void getSumOfCubes()
+{
+    Console.Write("Введите число N: ");
+    int N = int.Parse(Console.ReadLine());
+
+    // Ограничиваем диапазон поиска: от -Math.Cbrt(N) до Math.Cbrt(N)
+    int limit = (int)Math.Cbrt(Math.Abs(N)) + 1;
+
+    bool found = false;
+
+    for (int x = -limit; x <= limit; x++)
+    {
+        for (int y = -limit; y <= limit; y++)
+        {
+            for (int z = -limit; z <= limit; z++)
+            {
+                if (x * x * x + y * y * y + z * z * z == N)
+                {
+                    Console.WriteLine($"Решение найдено: x = {x}, y = {y}, z = {z}");
+                    found = true;
+                }
+            }
+        }
+    }
+
+    if (!found)
+    {
+        Console.WriteLine("No such combinations!");
+    }
+}
+getSumOfCubes();
+
 Console.ReadKey();
