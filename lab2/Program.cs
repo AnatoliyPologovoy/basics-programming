@@ -114,6 +114,7 @@ static void getTeilorRow()
     Console.WriteLine($"Приближенное значение cos({x}): {cosX}");
     Console.WriteLine($"Количество учтенных слагаемых: {n + 1}");
 }
+//getTeilorRow()
 
 //Задание 5
 static void getSumOfCubes()
@@ -146,6 +147,31 @@ static void getSumOfCubes()
         Console.WriteLine("No such combinations!");
     }
 }
-getSumOfCubes();
+//getSumOfCubes();
+
+static void getYearWord()
+{
+    Console.Write("Введите количество лет: ");
+    string year = Console.ReadLine();
+    int yearNum = int.Parse(year);
+    int yearLastNum = int.Parse(year[year.Length - 1].ToString());
+
+    string yearWord = "год";
+
+    if (yearNum > 4 && yearNum < 21 || yearLastNum > 4 && yearLastNum <= 9)
+    {
+        yearWord = "лет";
+        Console.WriteLine($"{year} {yearWord}");
+        return;
+    }
+    if (yearLastNum > 1 && yearLastNum < 5)
+    {
+        yearWord = "года";
+        Console.WriteLine($"{year} {yearWord}");
+        return;
+    }
+    Console.WriteLine($"{year} {yearWord}");
+}
+//getYearWord();
 
 Console.ReadKey();
